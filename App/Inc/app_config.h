@@ -1,0 +1,29 @@
+#ifndef APP_CONFIG_H
+#define APP_CONFIG_H
+
+#define SENSOR_QUEUE_LENGTH        8
+#define PROCESSED_QUEUE_LENGTH     8
+
+#define SENSOR_TASK_STACK_WORDS    256
+#define PROCESS_TASK_STACK_WORDS   384
+#define DISPLAY_TASK_STACK_WORDS   384
+#define WIRELESS_TASK_STACK_WORDS  384
+#define LOGGER_TASK_STACK_WORDS    384
+
+#define SENSOR_TASK_PRIORITY       (tskIDLE_PRIORITY + 3)
+#define PROCESS_TASK_PRIORITY      (tskIDLE_PRIORITY + 2)
+#define DISPLAY_TASK_PRIORITY      (tskIDLE_PRIORITY + 1)
+#define WIRELESS_TASK_PRIORITY     (tskIDLE_PRIORITY + 2)
+#define LOGGER_TASK_PRIORITY       (tskIDLE_PRIORITY + 1)
+
+#define SENSOR_SAMPLE_PERIOD_MS    1000U
+#define DISPLAY_REFRESH_MS         1000U
+#define WIRELESS_SEND_MS           2000U
+#define LOGGER_PERIOD_MS           5000U
+#define HEARTBEAT_PERIOD_MS        500U
+
+#define MQ135_ADC_MAX              4095.0f
+#define ADC_REF_VOLTAGE            3.3f
+#define FILTER_WINDOW              5U
+
+#endif

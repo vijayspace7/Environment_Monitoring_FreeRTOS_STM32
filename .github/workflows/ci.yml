@@ -1,0 +1,18 @@
+name: Static Check
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  lint-structure:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verify repository structure
+        run: |
+          test -f README.md
+          test -f Core/Src/main.c
+          test -f App/Src/app_tasks.c
+          test -f Drivers/BSP/Src/bme280.c
+          echo "Structure OK"

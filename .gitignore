@@ -1,0 +1,16 @@
+# STM32 / CubeIDE
+Debug/
+Release/
+*.launch
+.settings/
+.project
+.cproject
+.mxproject
+*.ioc
+
+# VS Code
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db
