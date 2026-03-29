@@ -1,6 +1,7 @@
 #include "main.h"
 #include "cmsis_os.h"
 #include "app_tasks.h"
+#include <stdint.h>
 
 I2C_HandleTypeDef hi2c1;
 SPI_HandleTypeDef hspi1;
